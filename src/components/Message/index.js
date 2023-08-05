@@ -1,14 +1,12 @@
 import {Component} from 'react'
 import './index.css'
+import Login from '../Login'
+import Logout from '../Logout'
 
 class Message extends Component {
   render() {
-    return (
-      <>
-        <h1>Please Login</h1>
-        <h1>Welcome, User</h1>
-      </>
-    )
+    const {login, logout} = this.state
+    return <h1>{login} ? Welcome, User : Please Login</h1>
   }
 }
 
